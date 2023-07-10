@@ -5,8 +5,8 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🐳</text></svg>">
   <meta content="text/html; charset=utf-8" http-equiv="content-type">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel='stylesheet' href='https://unpkg.com/normalize.css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+  <meta content="nimib 0.3.10" name="generator">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/pietroppeter/nimib/assets/atom-one-light.css'>
     <script src="https://cdn.jsdelivr.net/gh/pietroppeter/nimib@main/assets/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
@@ -29,10 +29,19 @@ button.nb-small {
 section#source {
   display:none
 }
-
+pre > code {
+  font-size: 1.2em;
+}
 .nb-output {
   line-height: 1.15;
 }
+figure {
+  margin: 2rem 0;
+}
+figcaption {
+  text-align: center;
+}
+  
 </style>
   
   <script async defer data-domain="pietroppeter.github.io/nimib" src="https://plausible.io/js/plausible.js"></script>
@@ -59,10 +68,9 @@ echo myNumber
 </code></pre>
 
 <pre><code class="nohighlight hljs nim"><span class="hljs-keyword">import</span> osproc
-<span class="hljs-keyword">echo</span> execProcess(<span class="hljs-string">&quot;nim r --verbosity:0 --hints:off main&quot;</span>)</code></pre><pre class="nb-output"><samp>42</samp></pre>
+<span class="hljs-keyword">echo</span> execProcess(<span class="hljs-string">&quot;nim r --verbosity:0 --hints:off main&quot;</span>)</code></pre><pre class="nb-output">42</pre>
 </main>
 <footer>
-<hr>
 <div class="nb-box">
   <span><span class="nb-small">made with <a href="https://pietroppeter.github.io/nimib/">nimib 🐳</a></span></span>
   <span></span>
